@@ -1,7 +1,7 @@
 const PulseiraModel = require('../models/pulseiraModel');
-const AcessoService = require('./AcessoService');
-const RespDepService = require('./RespDepService');
-const DependenteService = require('./DependenteService');
+const AcessoService = require('./acessoService');
+const RespDepService = require('./respDepService');
+const DependenteService = require('./dependenteService');
 
 class PulseiraService {
     async getPulseiraByUID(uid) {
@@ -104,5 +104,6 @@ class PulseiraService {
         }
     }
 }
+
 
 module.exports = new PulseiraService;
