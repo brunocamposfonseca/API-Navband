@@ -1,6 +1,6 @@
 const Funcionario = require('../models/funcionarioModel');
 const User = require('../models/userModel')
-const LoginService = require('./LoginService')
+const LoginService = require('./loginService')
 const {v4: uuid} = require('uuid')
 const bcrypt = require('bcrypt')
 
@@ -141,5 +141,6 @@ class FuncionarioService{
         }
     }
 }
+
 
 module.exports = new FuncionarioService;
