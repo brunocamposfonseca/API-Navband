@@ -1,4 +1,4 @@
-const AcessoService = require("../services/AcessoService");
+const AcessoService = require("../services/acessoService");
 
 class AcessoController{
     async getAcessoById(req, res){
@@ -87,5 +87,6 @@ class AcessoController{
         }
     }
 }
+
 
 module.exports = new AcessoController;
