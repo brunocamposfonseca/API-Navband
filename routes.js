@@ -1,12 +1,12 @@
 const { Router } = require('express')
-const FuncionarioController = require('./controllers/FuncionarioController');
-const ResponsavelController = require('./controllers/ResponsavelController');
-const DependenteController = require('./controllers/DependenteController');
-const LoginController = require('./controllers/LoginController');
-const PulseiraController = require('./controllers/PulseiraController');
-const AcessoController = require('./controllers/AcessoController');
-const LogController = require('./controllers/LogController');
-const RespDepController = require('./controllers/RespDepController');
+const FuncionarioController = require('./controllers/funcionarioController');
+const ResponsavelController = require('./controllers/responsavelController');
+const DependenteController = require('./controllers/dependenteController');
+const LoginController = require('./controllers/loginController');
+const PulseiraController = require('./controllers/pulseiraController');
+const AcessoController = require('./controllers/acessoController');
+const LogController = require('./controllers/logController');
+const RespDepController = require('./controllers/respDepController');
 
 const cors = require('cors')
 
@@ -99,5 +99,6 @@ routes.post('/api/acessos/existe/:tfcode', acesso.verificaExisteAcesso);
 
 //realizar login
 // routes.get('/api/login')
+
 
 module.exports = routes;
