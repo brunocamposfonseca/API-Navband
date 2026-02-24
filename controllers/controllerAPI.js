@@ -1,11 +1,11 @@
 // ControllerAPI.js (CORRIGIDO)
 
-const PulseiraService = require('../services/PulseiraService');
-const ResponsavelService = require('../services/ResponsavelService');
-const AcessoService = require('../services/AcessoService');
-const LoginService = require('../services/LoginService');
-const RespDepService = require('../services/RespDepService');
-const DependenteService = require('../services/DependenteService');
+const PulseiraService = require('../services/pulseiraService');
+const ResponsavelService = require('../services/responsavelService');
+const AcessoService = require('../services/acessoService');
+const LoginService = require('../services/loginService');
+const RespDepService = require('../services/respDepService');
+const DependenteService = require('../services/dependenteService');
 
 class ControllerAPI {
     constructor(dataObject) { 
@@ -192,5 +192,6 @@ class ControllerAPI {
         }
     }
 }
+
 
 module.exports = ControllerAPI;
