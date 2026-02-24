@@ -1,6 +1,6 @@
 const { default: mongoose } = require("mongoose");
 const User = require('../models/userModel');
-const DependenteService = require('../services/DependenteService');
+const DependenteService = require('../services/dependenteService');
 
 class DependenteController {
     async create(req, res) {
@@ -84,5 +84,6 @@ class DependenteController {
         }
     }
 }
+
 
 module.exports = new DependenteController
