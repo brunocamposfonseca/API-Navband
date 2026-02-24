@@ -1,4 +1,4 @@
-const LogService = require("./LogService");
+const LogService = require("./logService");
 const AcessoModel = require("../models/acessoModel");
 
 class AcessoService{
@@ -112,5 +112,6 @@ class AcessoService{
         }
     }
 }
+
 
 module.exports = new AcessoService;
