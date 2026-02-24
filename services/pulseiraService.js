@@ -1,5 +1,5 @@
 const PulseiraModel = require('../models/pulseiraModel');
-const AcessoService = require('./acessoService');
+const AcessoService = require('./aessoService.js');
 const RespDepService = require('./respDepService');
 const DependenteService = require('./dependenteService');
 
@@ -107,3 +107,4 @@ class PulseiraService {
 
 
 module.exports = new PulseiraService;
+
