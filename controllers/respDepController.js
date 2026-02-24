@@ -1,4 +1,4 @@
-const RespDepService = require("../services/RespDepService");
+const RespDepService = require("../services/respDepService");
 
 class RespDepController{
     async createRespDep(req, res){
@@ -149,5 +149,6 @@ class RespDepController{
         }
     }   
 }
+
 
 module.exports = new RespDepController;
