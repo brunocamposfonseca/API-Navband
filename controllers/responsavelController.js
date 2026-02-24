@@ -1,5 +1,5 @@
 const {default: mongoose} = require("mongoose");
-const ResponsavelService = require("../services/ResponsavelService")
+const ResponsavelService = require("../services/responsavelService")
 
 class ResponsavelController {
     async create(req,res){
@@ -120,5 +120,6 @@ class ResponsavelController {
         }
     }
 }
+
 
 module.exports = new ResponsavelController
