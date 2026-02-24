@@ -1,4 +1,4 @@
-const PulseiraService = require("../services/PulseiraService");
+const PulseiraService = require("../services/pulseiraService");
 
 class PulseiraController {
     async getPulseira(req, res) {
@@ -74,5 +74,6 @@ class PulseiraController {
         }   
     }
 }
+
 
 module.exports = new PulseiraController;
