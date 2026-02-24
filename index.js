@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const net = require('net');
 const aedes = require('aedes')();
 const routes = require('./routes');
-const ControllerAPI = require('./controllers/controllerAPI');
+const ControllerAPI = require('./controllers/ControllerAPI');
 
 const app = express();
 
@@ -174,4 +174,3 @@ mongoose.connect(process.env.MONGO_URI)
   .catch((err) => {
     console.error('Erro ao conectar no MongoDB:', err);
   });
-
