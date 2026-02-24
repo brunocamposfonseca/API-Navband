@@ -1,4 +1,4 @@
-const LogService = require("../services/LogService");
+const LogService = require("../services/logService");
 
 class LogController{
     async getAllLogs(req, res){
@@ -73,5 +73,6 @@ class LogController{
         }
     }
 }
+
 
 module.exports = new LogController;
