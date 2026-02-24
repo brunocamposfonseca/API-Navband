@@ -163,11 +163,11 @@ aedes.on('publish', (packet, client) => {
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     console.log('<==== 🧩 MONGOOSE CONECTADO COM SUCESSO! ====>');
-
-    server.listen(3000, () => {
+    const PORT = process.env.PORT || 3000
+    server.listen(PORT, () => {
       console.log('<==== 🚀 Servidor Disponível ✅ ====>');
-      console.log('<-| HTTP em http://localhost:3000 |->');
-      console.log('<-| WS em ws://localhost:3000/wss |->');
+      console.log('<-| HTTP em http://localhost:' + PORT + ' |->');
+      console.log('<-| WS em ws://localhost:' + PORT + '/wss |->');
       console.log('<-| MQTT em mqtt://localhost:1883 |->');
     });
   })
