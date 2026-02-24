@@ -1,4 +1,4 @@
-const RespDepModel = require("../models/RespDepModel");
+const RespDepModel = require("../models/respDepModel");
 const {v4: uuid} = require('uuid')
 
 class RespDepService{
@@ -128,5 +128,6 @@ class RespDepService{
         }
     }
 }
+
 
 module.exports = new RespDepService;
