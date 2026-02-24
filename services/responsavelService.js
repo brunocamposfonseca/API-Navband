@@ -1,6 +1,6 @@
 const Responsavel = require('../models/responsavelModel')
 const User = require('../models/userModel')
-const LoginService = require('./LoginService')
+const LoginService = require('./loginService')
 const {v4: uuid} = require('uuid')
 const bcrypt = require('bcrypt')
 
@@ -155,5 +155,6 @@ class ResponsavelService{
         }
     }
 }
+
 
 module.exports = new ResponsavelService
