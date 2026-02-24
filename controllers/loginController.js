@@ -1,7 +1,5 @@
 const { default: mongoose } = require("mongoose")
-const LoginService = require('../services/LoginService')
-
-
+const LoginService = require('../services/loginService')
 
 class LoginController {
   async login(req, res) {
@@ -38,5 +36,6 @@ class LoginController {
     }
   }
 }
+
 
 module.exports = new LoginController
