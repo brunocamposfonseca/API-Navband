@@ -1,5 +1,5 @@
 const { default: mongoose } = require("mongoose");
-const FuncionarioService = require('../services/FuncionarioService');
+const FuncionarioService = require('../services/funcionarioService');
 
 class FuncionarioController {
     async create(req, res) {
@@ -125,5 +125,6 @@ class FuncionarioController {
         }
     }
 }
+
 
 module.exports = new FuncionarioController;
